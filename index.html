@@ -39,7 +39,25 @@
     <!--[if lt IE 9]>
     <script src="js/respond.min.js"></script>
     <![endif]-->
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
+        #wedding-title {
+            font-size: 32px;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 3s ease-out forwards;
+        }
+    </style>
 </head>
 
 <body>
@@ -82,7 +100,7 @@
                     <div class="col-md-8 col-md-offset-2 text-center">
                         <div class="display-t">
                             <div class="display-tc animate-box" data-animate-effect="fadeIn">
-                                <h1>Hoàng Văn Đông &amp; Nguyễn Thị Hương</h1>
+                                <h1 id="wedding-title">Hoàng Văn Đông &amp; Nguyễn Thị Hương</h1>
                             </div>
                         </div>
                     </div>
